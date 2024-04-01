@@ -1,6 +1,7 @@
 ## kubernetes 初始化zookeeper系统
 ### 用法
 ```shell
+HOSTNAME=online-test-zookeeper-0
 go run main.go --config=/usr/local/apache-zookeeper/conf/zoo.cfg \
              --dataDir=/var/lib/zookeeper/${HOSTNAME} \
              --max-node=3 \
